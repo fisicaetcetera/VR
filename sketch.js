@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  setVRBackgroundColor(200, 0, 150);
+  setVRBackgroundColor(0);
   fill(0);
 }
 
