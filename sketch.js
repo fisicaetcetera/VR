@@ -14,7 +14,7 @@ function calculate() {
 }
 
 function draw() {
-  translate(0, 0, 10);
+  translate(0, 0, -110);
   rotateX(10);
   rotateY(20);
   texture(sun);
