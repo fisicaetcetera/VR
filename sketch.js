@@ -6,7 +6,6 @@ function preload() {
 
 function setup() {
   setVRBackgroundColor(0);
-  fill(0);
 }
 
 function calculate() {
@@ -17,8 +16,6 @@ function calculate() {
 function draw() {
   translate(0, 0, 130);
   //rotateY(frameCount/100);
-  //noStroke();
-    noStroke();
   texture(sun);
-  sphere(15);
+  sphere(10);
 }
