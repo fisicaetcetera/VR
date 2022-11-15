@@ -15,11 +15,10 @@ function calculate() {
 }
 
 function draw() {
-  translate(0, 0, 30);
+  translate(0, 0, 130);
   //rotateY(frameCount/100);
   //noStroke();
     noStroke();
-  //texture(sun);
-  fill(111);
+  texture(sun);
   sphere(15);
 }
