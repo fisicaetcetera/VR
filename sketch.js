@@ -16,7 +16,7 @@ function calculate() {
 function draw() {
   translate(0, 0, -30);
   rotateY(frameCount/100);
-  noStroke();
+  //noStroke();
   texture(sun);
   //noStroke();
   sphere(15);
