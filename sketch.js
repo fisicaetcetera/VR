@@ -11,13 +11,15 @@ function setup() {
 
 function calculate() {
   // Things you want to happen once per frame
+  rotateY(0.5);
 }
 
 function draw() {
-  translate(0, 0, -30);
+  translate(0, 0, 30);
   //rotateY(frameCount/100);
   //noStroke();
+    noStroke();
   texture(sun);
-  //noStroke();
+
   sphere(15);
 }
