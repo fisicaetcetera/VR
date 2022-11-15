@@ -19,7 +19,7 @@ function draw() {
   //rotateY(frameCount/100);
   //noStroke();
     noStroke();
-  texture(sun);
+  //texture(sun);
 
   sphere(15);
 }
