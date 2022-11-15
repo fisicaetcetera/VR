@@ -20,6 +20,6 @@ function draw() {
   //noStroke();
     noStroke();
   //texture(sun);
-
+  fill(111);
   sphere(15);
 }
