@@ -14,10 +14,10 @@ function calculate() {
 }
 
 function draw() {
-  translate(0, 0, -50);
+  translate(0, -30, 0);
   rotateY(frameCount/1000);
   no
   texture(sun);
-  noStroke();
+  //noStroke();
   sphere(15);
 }
