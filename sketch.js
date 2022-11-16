@@ -16,7 +16,7 @@ function calculate() {
 function draw() {
   //push();
   translate(0, 0, -30);
-  rotateY(ii++/100);
+  //rotateY(ii++/100);
   texture(sun);
   sphere(10);
   //pop();
