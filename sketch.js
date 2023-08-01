@@ -14,8 +14,8 @@ function draw() {
   //push();
   translate(0, 0, -30);
   //rotateY(ii++/100);
-  texture(sun);
-  noStroke();
+  //texture(sun);
+  //noStroke();
   sphere(10);
   
   //pop();
