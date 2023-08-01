@@ -1,6 +1,7 @@
 function preload() {
   
   sun = loadImage('sun.jpg');
+    createVRCanvas();
   //setVRBackgroundColor(0);
 }
 
