@@ -1,7 +1,7 @@
 function preload() {
   
   sun = loadImage('sun.jpg');
-  setVRBackgroundColor(0);
+  //setVRBackgroundColor(0);
 }
 
 function setup() {
@@ -9,7 +9,7 @@ function setup() {
   let ii = 1;
 }
 function draw() {
-  setViewerPosition(0, 0, 400);
+  //setViewerPosition(0, 0, 400);
   //push();
   translate(0, 0, -30);
   //rotateY(ii++/100);
