@@ -9,7 +9,7 @@ function setup() {
   let ii = 1;
 }
 function draw() {
-  setViewerPosition(0, 0, 0);
+  setViewerPosition(0, 0, 1);
   //push();
   translate(0, 0, -30);
   //rotateY(ii++/100);
