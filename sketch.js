@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  background(0);
+  //background(0);
   let ii = 1;
 }
 function draw() {
