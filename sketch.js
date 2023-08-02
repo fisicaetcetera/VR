@@ -3,6 +3,7 @@ let moon;
 function preload() {
   createVRCanvas();
   moon = loadImage("moonmap1k.jpg");
+  stars = loadImage("stars_milky_way_small.jpg");
 }
 
 function setup() {
@@ -19,5 +20,10 @@ function draw() {
     rotateY(frameCount/1000);
     sphere(70);
   pop();
-  
+
+   push();
+  translate(0, 0, 0);
+  texture(starsjpg);
+  sphere(6000);
+  pop();
 } //draw
