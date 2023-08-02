@@ -11,11 +11,12 @@ function setup() {
 }
 
 function draw() {
-  setViewerPosition(0, 0, 200);
+  setViewerPosition(0, 0, 150);
   push();
     translate(0,0,0);
     texture(moon);
     noStroke();
+    rotateY(frameCount/1000);
     sphere(70);
   pop();
   
