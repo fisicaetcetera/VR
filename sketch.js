@@ -2,7 +2,7 @@ function preload() {
   
   sun = loadImage('sun.jpg');
     createVRCanvas();
-  setVRBackgroundColor(111);
+  setVRBackgroundColor(111,111,111);
 }
 
 function setup() {
