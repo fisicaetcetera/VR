@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  setViewerPosition(0, 0, 150);
+  setViewerPosition(0, 0, 100);
   push();
     translate(0,0,0);
     texture(moon);
