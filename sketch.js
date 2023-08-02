@@ -4,7 +4,7 @@ let stars;
 function preload() {
   createVRCanvas();
   moon = loadImage("moonmap1k.jpg");
-  stars = loadImage("stars_milky_way_small.jpg");
+  stars = loadImage("whole-sky-nasa.jpg");
 }
 
 function setup() {
