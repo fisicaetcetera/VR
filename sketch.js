@@ -2,7 +2,7 @@ function preload() {
   
   sun = loadImage('sun.jpg');
     createVRCanvas();
-  setVRBackgroundColor(0);
+  setVRBackgroundColor(222);
 }
 
 function setup() {
@@ -16,7 +16,7 @@ function draw() {
   rotateY(ii++/1000);
   //texture(sun);
   noStroke();
+  fill(0);
   sphere(10);
-  
   //pop();
 }
