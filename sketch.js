@@ -11,12 +11,12 @@ function setup() {
 }
 function draw() {
   setViewerPosition(0, 0, 1);
-  //push();
+  push();
   translate(0, 0, -30);
-  //rotateY(ii++/100);
-  //texture(sun);
-  //noStroke();
+  rotateY(ii++/100);
+  texture(sun);
+  noStroke();
   sphere(10);
   
-  //pop();
+  pop();
 }
