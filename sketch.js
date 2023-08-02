@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  setViewerPosition(0, 0, 100);
+  setViewerPosition(0, 0, 90);
   push();
     translate(0,0,0);
     texture(moon);
@@ -23,7 +23,7 @@ function draw() {
 
    push();
   translate(0, 0, 0);
-  texture(starsjpg);
+  texture(stars);
   sphere(6000);
   pop();
 } //draw
