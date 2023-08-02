@@ -1,4 +1,5 @@
 let moon;
+let stars;
 
 function preload() {
   createVRCanvas();
