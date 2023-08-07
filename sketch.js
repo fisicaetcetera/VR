@@ -25,6 +25,6 @@ function draw() {
    push();
   translate(0, 0, 0);
   texture(stars);
-  sphere(3000);
+  sphere(2000);
   pop();
 } //draw
