@@ -298,9 +298,9 @@ class EnterXRButton {
     options.cssprefix = options.cssprefix || 'webvr-ui';
 
     // This reads VR as none of the samples are designed for other formats as of yet.
-    options.textEnterXRTitle = options.textEnterXRTitle || 'ENTER VR';
-    options.textXRNotFoundTitle = options.textXRNotFoundTitle || 'VR NOT FOUND';
-    options.textExitXRTitle = options.textExitXRTitle || 'EXIT VR';
+    options.textEnterXRTitle = options.textEnterXRTitle || 'INICIAR VR';
+    options.textXRNotFoundTitle = options.textXRNotFoundTitle || 'VR NÃO ENCONTRADO';
+    options.textExitXRTitle = options.textExitXRTitle || 'ENCERRAR VR';
 
     options.onRequestSession = options.onRequestSession || (function() {});
     options.onEndSession = options.onEndSession || (function() {});
