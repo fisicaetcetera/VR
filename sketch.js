@@ -21,12 +21,12 @@ function draw() {
     texture(moon);
     noStroke();
     rotateY(frameCount/1000);
-    sphere(70);
+    sphere(30);
   pop();
 
    push();
   translate(0, 0, 0);
   texture(stars);
-  sphere(500);
+  sphere(1000);
   pop();
 } //draw
