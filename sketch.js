@@ -1,4 +1,5 @@
 let randomx=[], randomy=[], randomz = [];
+let moon;
 
 function preload() {
   createVRCanvas();
