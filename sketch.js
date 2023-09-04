@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   setViewerPosition(0, 0, 0);
-  for(let i=0; i<5; ++i) {
+  for(let i=0; i<150; ++i) {
     push();
     translate(randomx[i], randomy[i], randomz[i]);
     fill('red');
