@@ -21,17 +21,15 @@ function draw() {
   for(let i=0; i<150; ++i) {
     push();
     translate(randomx[i], randomy[i], randomz[i]);
-    fill('red');
+    
     if(intersectsSphere(70, 0, 0)) {
       
-            fill(255,0,0,80);
-            text("Ola!", 50, 30); //teste
-            text("Ola!", 100, 100); //teste
     }
     texture(moon);
     rotateY(frameRate/500);
-    sphere(70);
     noStroke();
+    sphere(70);
+    
     pop();
   }
 }
