@@ -26,7 +26,7 @@ function draw() {
       
     }
     texture(moon);
-    rotateY(frameRate/500);
+    //rotateY(frameRate()/500);
     noStroke();
     sphere(70);
     
