@@ -21,7 +21,7 @@ function draw() {
     texture(moon);
     noStroke();
     rotateY(frameCount/1000);
-    sphere(30);
+    //sphere(30);
   pop();
 
   
@@ -32,7 +32,7 @@ function draw() {
     texture(sun);
     noStroke();
     rotateY(frameCount/1000);
-    sphere(30);
+    //sphere(30);
   pop();
 
 
