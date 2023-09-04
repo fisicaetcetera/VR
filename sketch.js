@@ -20,7 +20,7 @@ function draw() {
     push();
     translate(randomx[i], randomy[i], randomz[i]);
     fill('red');
-    if(intersectsSphere(70, 0, 0)) {
+    if(intersectsSphere(0, 0, 0)) {
       fill('blue');
             //fill(255,0,0,80);
             //text("Ola!", -50, -30); //teste
