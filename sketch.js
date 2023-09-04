@@ -2,7 +2,7 @@ let randomx=[], randomy=[], randomz = [];
 
 function preload() {
   createVRCanvas();
-  moon = loadImage();
+  moon = loadImage("moonmap1k.jpg");
 }
 
 function setup() {
