@@ -7,7 +7,7 @@ function preload() {
   createVRCanvas();
   moon = loadImage("moonmap1k.jpg");
   sun = loadImage("sun.jpg"):
-  earth = loadImage("earth.jpg");
+  earth = loadImage("earthcloud.jpg");
   mercury = loadImage("mercury.jpg");
   venus = loadImage("venus.jpg");
   mars = loadImage("mars.jpg");
@@ -37,7 +37,8 @@ function draw() {
     if(intersectsSphere(70, 0, 0)) {
       
     }
-    texture(moon);
+    let planet = random(planets);
+    texture(planet);
     //rotateY(frameRate()/500);
     noStroke();
     sphere(70);
