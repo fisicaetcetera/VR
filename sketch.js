@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-  setVRBackgroundColor(0,0,0);
+  //setVRBackgroundColor(0,0,0);
 
 }
 
@@ -27,8 +27,8 @@ function draw() {
   
   push();
  
-    translate(0,0,-100);
-     rotateY(1.507);
+    translate(0,-100,-100);
+    //rotateY(1.507);
     texture(sun);
     noStroke();
     rotateY(frameCount/1000);
@@ -38,8 +38,8 @@ function draw() {
 
    push();
   translate(0, 0, 0);
-      rotateY(1.507);
+      rotateX(0.3);
   texture(stars);
-  sphere(2000);
+  sphere(1000);
   pop();
 } //draw
