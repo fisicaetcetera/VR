@@ -30,6 +30,7 @@ function draw() {
     }
     texture(moon);
     sphere(70);
+    noStroke();
     pop();
   }
 }
