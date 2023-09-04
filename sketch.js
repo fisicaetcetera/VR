@@ -21,6 +21,9 @@ function draw() {
     fill('red');
     if(intersectsSphere(70, 0, 0)) {
       fill('blue');
+            fill(255,0,0,80);
+            text("Ola, Victor!", -50, -30); //teste
+            text("Ola, Victor!", -50, -50); //teste
     }
     sphere(70);
     pop();
