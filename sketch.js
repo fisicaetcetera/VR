@@ -2,6 +2,7 @@ let randomx=[], randomy=[], randomz = [];
 
 function preload() {
   createVRCanvas();
+  moon = loadImage();
 }
 
 function setup() {
@@ -20,12 +21,13 @@ function draw() {
     push();
     translate(randomx[i], randomy[i], randomz[i]);
     fill('red');
-    if(intersectsSphere(10, 0, 0)) {
-      fill('blue');
-            //fill(255,0,0,80);
-            //text("Ola!", 50, 30); //teste
-            //text("Ola!", 100, 100); //teste
+    if(intersectsSphere(70, 0, 0)) {
+      
+            fill(255,0,0,80);
+            text("Ola!", 50, 30); //teste
+            text("Ola!", 100, 100); //teste
     }
+    texture(moon);
     sphere(70);
     pop();
   }
