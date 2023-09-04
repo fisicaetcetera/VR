@@ -17,12 +17,23 @@ function setup() {
 function draw() {
   setViewerPosition(0, 0, 100);
   push();
-    translate(0,0,0);
+    translate(0,0,-100);
     texture(moon);
     noStroke();
     rotateY(frameCount/1000);
     sphere(30);
   pop();
+
+  
+  push();
+    translate(0,0,-100);
+    rotateY(1.507);
+    texture(venus);
+    noStroke();
+    rotateY(frameCount/1000);
+    sphere(30);
+  pop();
+
 
    push();
   translate(0, 0, 0);
