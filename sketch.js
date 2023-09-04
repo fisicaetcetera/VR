@@ -20,11 +20,11 @@ function draw() {
     push();
     translate(randomx[i], randomy[i], randomz[i]);
     fill('red');
-    if(intersectsSphere(0, 0, 0)) {
+    if(intersectsSphere(10, 0, 0)) {
       fill('blue');
             //fill(255,0,0,80);
-            //text("Ola!", -50, -30); //teste
-            //text("Ola!", -50, -50); //teste
+            //text("Ola!", 50, 30); //teste
+            //text("Ola!", 100, 100); //teste
     }
     sphere(70);
     pop();
