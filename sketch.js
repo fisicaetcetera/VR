@@ -40,6 +40,6 @@ function draw() {
   translate(0, 0, 0);
       rotateX(0.3);
   texture(stars);
-  sphere(500);
+  sphere(1500);
   pop();
 } //draw
