@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-  //setVRBackgroundColor(0,0,0);
+  setVRBackgroundColor(0,0,0);
 
 }
 
@@ -26,8 +26,9 @@ function draw() {
 
   
   push();
+      rotateY(1.507);
     translate(0,0,-100);
-    rotateY(1.507);
+
     texture(sun);
     noStroke();
     rotateY(frameCount/1000);
