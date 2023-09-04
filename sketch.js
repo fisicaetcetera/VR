@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  setVRBackgroundColor(200, 0, 150);
+  setVRBackgroundColor(0, 0, 0);
   for(let i=0; i<5; ++i) {
     randomx[i] = random(-500, 500);
     randomy[i] = random(-500, 500);
