@@ -6,7 +6,7 @@ let planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus
 function preload() {
   createVRCanvas();
   moon = loadImage("moonmap1k.jpg");
-  sun = loadImage("sun.jpg"):
+  sun = loadImage("sun.jpg");
   earth = loadImage("earthcloud.jpg");
   mercury = loadImage("mercury.jpg");
   venus = loadImage("venus.jpg");
