@@ -3,14 +3,14 @@ let venus;
 let stars;
 
 function preload() {
-  createVRCanvas(3000);
+  createVRCanvas();
   moon = loadImage("moonmap1k.jpg");
   stars = loadImage("whole-sky-nasa.jpg");
   sun = loadImage("sun.jpg");
 }
 
 function setup() {
-  //setVRBackgroundColor(0,0,0);
+  setVRBackgroundColor(0,0,0);
 
 }
 
