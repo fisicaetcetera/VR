@@ -14,7 +14,7 @@ function preload() {
   jupiter = loadImage("jupiter.jpg");
   saturn = loadImage("saturn.jpg");
   uranus = loadImage("uranus.jpg");
-  neptune = loadImage("neptune");
+  neptune = loadImage("neptune.jpg");
   pluto = loadImage("pluto.jpg");
 }
 
