@@ -29,6 +29,7 @@ function draw() {
             text("Ola!", 100, 100); //teste
     }
     texture(moon);
+    rotateY(frameRate/500);
     sphere(70);
     noStroke();
     pop();
