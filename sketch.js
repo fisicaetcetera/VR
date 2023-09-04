@@ -3,7 +3,7 @@ let venus;
 let stars;
 
 function preload() {
-  createVRCanvas();
+  createVRCanvas(1000);
   moon = loadImage("moonmap1k.jpg");
   stars = loadImage("whole-sky-nasa.jpg");
   sun = loadImage("sun.jpg");
