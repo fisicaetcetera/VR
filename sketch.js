@@ -3,7 +3,7 @@ let venus;
 let stars;
 
 function preload() {
-  createVRCanvas(1000);
+  createVRCanvas(2000);
   moon = loadImage("moonmap1k.jpg");
   stars = loadImage("whole-sky-nasa.jpg");
   sun = loadImage("sun.jpg");
@@ -15,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  setViewerPosition(0, 0, 100);
+  setViewerPosition(0, 0, 0);
   push();
     translate(0,0,-100);
     texture(moon);
@@ -32,7 +32,7 @@ function draw() {
     texture(sun);
     noStroke();
     rotateY(frameCount/1000);
-    //sphere(30);
+    sphere(30);
   pop();
 
 
@@ -40,6 +40,6 @@ function draw() {
   translate(0, 0, 0);
       rotateX(0.3);
   texture(stars);
-  sphere(100);
+  sphere(500);
   pop();
 } //draw
