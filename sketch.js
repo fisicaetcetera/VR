@@ -41,8 +41,8 @@ function draw() {
     //   stroke(0); 
     //}
     let planet = random(planets);
-    console.log(planet);
-    texture(sun);
+    //console.log(planet);
+    texture(planet);
     //rotateY(frameRate()/500);
     sphere(70);
     pop();
