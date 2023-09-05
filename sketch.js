@@ -42,8 +42,10 @@ function draw() {
     noStroke();
     if(intersectsSphere(70, 0, 0)) {
        //textFont(myfont, 10 );
-      textFont('Georgia');
-       text("Planet name...", x[i]+40, y[i]+40) ;
+       //textFont('Georgia');
+       //text("Planet name...", x[i]+40, y[i]+40) ;
+       strokeWeight(1);
+       stroke(111);
     }
     ii = random(numeros);
     texture(planets[i]);
