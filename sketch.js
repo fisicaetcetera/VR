@@ -44,7 +44,7 @@ function draw() {
        //textFont(myfont, 10 );
        //textFont('Georgia');
        //text("Planet name...", x[i]+40, y[i]+40) ;
-       strokeWeight(1);
+       strokeWeight(3);
        stroke(111);
     }
     ii = random(numeros);
