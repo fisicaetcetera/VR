@@ -21,7 +21,7 @@ function preload() {
 
 function setup() {
   //setVRBackgroundColor(0, 0, 0);
-  createCanvas(1000,1000, WEBGL);
+  createCanvas(1366, 768 , WEBGL);
   background(0);
   for(let i=0; i<150; ++i) {
     randomx[i] = random(-500, 500);
@@ -43,7 +43,7 @@ function draw() {
     ii = random(numeros);
     texture(planets[ii]);
     rotateY(frameRate()/500);
-    sphere(70);
+    sphere(20);
     pop();
   }
 }
