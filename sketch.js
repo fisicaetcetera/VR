@@ -6,7 +6,7 @@ let numeros = [0, 1,2,3,4,5,6,7,8,9];
 let fr = 25;  //frame rate
 
 function preload() {
-  //createVRCanvas();
+  createVRCanvas();
   moon = loadImage("moonmap1k.jpg");
   planets[0] = loadImage("sun.jpg");
   planets[3] = loadImage("earthcloud.jpg");
@@ -21,8 +21,8 @@ function preload() {
 }
 
 function setup() {
-  //setVRBackgroundColor(0, 0, 0);
-  createCanvas(1366, 768 , WEBGL);
+  setVRBackgroundColor(0, 0, 0);
+  //createCanvas(1366, 768 , WEBGL);
   background(0);
   frameRate(fr);
   for(let i=0; i<150; ++i) {
@@ -34,7 +34,7 @@ function setup() {
 }
 
 function draw() {
-  //setViewerPosition(0, 0, 0);
+  setViewerPosition(0, 0, 0);
   for(let i=0; i < 10; i++) {
     push();
     translate(x[i], y[i], z[i]);
