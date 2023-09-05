@@ -39,9 +39,9 @@ function draw() {
     push();
     translate(x[i], y[i], z[i]);
     noStroke();
-    //if(intersectsSphere(70, 0, 0)) {
-    //   stroke(0); 
-    //}
+    if(intersectsSphere(20, 0, 0)) {
+       stroke(0); 
+    }
     ii = random(numeros);
     texture(planets[i]);
     rotateY(frameCount/500);
