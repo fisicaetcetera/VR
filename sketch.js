@@ -3,6 +3,7 @@ let moon;
 let sun;
 let planets = [];
 let numeros = [0, 1,2,3,4,5,6,7,8,9];
+let fr = 1;  //frame rate
 
 function preload() {
   //createVRCanvas();
@@ -23,6 +24,7 @@ function setup() {
   //setVRBackgroundColor(0, 0, 0);
   createCanvas(1366, 768 , WEBGL);
   background(0);
+  frameRate(fr);
   for(let i=0; i<150; ++i) {
     randomx[i] = random(-500, 500);
     randomy[i] = random(-500, 500);
@@ -42,7 +44,7 @@ function draw() {
     //}
     ii = random(numeros);
     texture(planets[ii]);
-    rotateY(frameRate()/500);
+    rotateY(frameCount/500);
     sphere(20);
     pop();
   }
