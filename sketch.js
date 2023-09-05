@@ -2,6 +2,7 @@ let randomx=[], randomy=[], randomz = [];
 let moon;
 let sun;
 let planets = [];
+let numeros = [0, 1];
 
 function preload() {
   //createVRCanvas();
@@ -23,12 +24,11 @@ function setup() {
   createCanvas(1000,1000, WEBGL);
   background(0);
   for(let i=0; i<150; ++i) {
-    randomx[i] = random(-5000, 5000);
+    randomx[i] = random(-500, 500);
     randomy[i] = random(-500, 500);
     randomz[i] = random(-500, 500);
-    console.log(planets[0], planets[1]);
-  }
-  
+    }
+  console.log(planets[0], planets[1]);
 }
 
 function draw() {
@@ -40,9 +40,9 @@ function draw() {
     //if(intersectsSphere(70, 0, 0)) {
     //   stroke(0); 
     //}
-    
-    texture(planets[1]);
-    //rotateY(frameRate()/500);
+    ii = random(numeros);
+    texture(planets[ii]);
+    rotateY(frameRate()/500);
     sphere(70);
     pop();
   }
