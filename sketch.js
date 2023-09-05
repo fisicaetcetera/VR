@@ -1,7 +1,8 @@
 let randomx=[], randomy=[], randomz = [];
 let moon;
 let sun;
-let planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
+let planets = [mercury,mars,earth];
+  //'mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
 
 function preload() {
   createVRCanvas();
@@ -40,11 +41,9 @@ function draw() {
     }
     let planet = random(planets);
     console.log(planet);
-    texture(planet);
+    texture(sun);
     //rotateY(frameRate()/500);
-    noStroke();
     sphere(70);
-    
     pop();
   }
 }
