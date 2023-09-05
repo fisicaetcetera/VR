@@ -1,9 +1,9 @@
-let randomx=[], randomy=[], randomz = [];
+let x = [], y = [], z = [];
 let moon;
 let sun;
 let planets = [];
 let numeros = [0, 1,2,3,4,5,6,7,8,9];
-let fr = 1;  //frame rate
+let fr = 25;  //frame rate
 
 function preload() {
   //createVRCanvas();
@@ -26,24 +26,24 @@ function setup() {
   background(0);
   frameRate(fr);
   for(let i=0; i<150; ++i) {
-    randomx[i] = random(-500, 500);
-    randomy[i] = random(-500, 500);
-    randomz[i] = random(-500, 500);
+    x[i] = random(-500, 500);
+    y[i] = random(-500, 500);
+    z[i] = random(-500, 500);
     }
   console.log(planets[0], planets[1]);
 }
 
 function draw() {
   //setViewerPosition(0, 0, 0);
-  for(let i=0; i<150; ++i) {
+  for(let i=0; i < 10; i++) {
     push();
-    translate(randomx[i], randomy[i], randomz[i]);
+    translate(x[i], y[i], z[i]);
     noStroke();
     //if(intersectsSphere(70, 0, 0)) {
     //   stroke(0); 
     //}
     ii = random(numeros);
-    texture(planets[ii]);
+    texture(planets[i]);
     rotateY(frameCount/500);
     sphere(20);
     pop();
