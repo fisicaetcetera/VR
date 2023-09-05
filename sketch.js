@@ -18,6 +18,7 @@ function preload() {
   planets[7] = loadImage("uranus.jpg");
   planets[8] = loadImage("neptune.jpg");
   planets[9] = loadImage("pluto.jpg");
+  myfont = loadFont('Catallina.otf');
 }
 
 function setup() {
@@ -37,15 +38,16 @@ function draw() {
   setViewerPosition(0, 0, 0);
   for(let i=0; i < 10; i++) {
     push();
-    translate(x[i], y[i], z[i]);
+    translate(x[i], y[i], z[i]/50);
     noStroke();
-    if(intersectsSphere(20, 0, 0)) {
-       stroke(0); 
+    if(intersectsSphere(70, 0, 0)) {
+       textFont(myfont, 10 );
+       text("Planet name...", x[i]+40, y[i]+40) ;
     }
     ii = random(numeros);
     texture(planets[i]);
     rotateY(frameCount/500);
-    sphere(20);
+    sphere(70);
     pop();
   }
 }
