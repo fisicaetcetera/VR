@@ -24,6 +24,7 @@ function setup() {
     randomx[i] = random(-5000, 5000);
     randomy[i] = random(-500, 500);
     randomz[i] = random(-500, 500);
+    console.log(planets);
   }
   
 }
@@ -33,9 +34,9 @@ function draw() {
   for(let i=0; i<150; ++i) {
     push();
     translate(randomx[i], randomy[i], randomz[i]);
-    
+    noStroke();
     if(intersectsSphere(70, 0, 0)) {
-      
+       stroke(0); 
     }
     let planet = random(planets);
     console.log(planet);
