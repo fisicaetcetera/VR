@@ -1,7 +1,7 @@
 let randomx=[], randomy=[], randomz = [];
 let moon;
 let sun;
-let planets[];
+let planets = [];
 
 function preload() {
   //createVRCanvas();
