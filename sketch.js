@@ -31,7 +31,7 @@ function setup() {
     y[i] = random(-500, 500);
     z[i] = random(-500, 500);
     }
-  console.log(planets[0], planets[1]);
+    console.log("2054");
 }
 
 function draw() {
