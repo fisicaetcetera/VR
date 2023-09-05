@@ -5,7 +5,6 @@ let planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus
 
 function preload() {
   //createVRCanvas();
-  createCanvas(1000,1000, WEBGL);
   moon = loadImage("moonmap1k.jpg");
   sun = loadImage("sun.jpg");
   earth = loadImage("earthcloud.jpg");
@@ -21,6 +20,7 @@ function preload() {
 
 function setup() {
   //setVRBackgroundColor(0, 0, 0);
+  createCanvas(1000,1000, WEBGL);
   background(0);
   for(let i=0; i<150; ++i) {
     randomx[i] = random(-5000, 5000);
