@@ -4,7 +4,8 @@ let sun;
 let planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
 
 function preload() {
-  createVRCanvas();
+  //createVRCanvas();
+  createCanvas(1000,1000, WEBGL);
   moon = loadImage("moonmap1k.jpg");
   sun = loadImage("sun.jpg");
   earth = loadImage("earthcloud.jpg");
@@ -19,7 +20,8 @@ function preload() {
 }
 
 function setup() {
-  setVRBackgroundColor(0, 0, 0);
+  //setVRBackgroundColor(0, 0, 0);
+  setBackground(0);
   for(let i=0; i<150; ++i) {
     randomx[i] = random(-5000, 5000);
     randomy[i] = random(-500, 500);
@@ -30,14 +32,14 @@ function setup() {
 }
 
 function draw() {
-  setViewerPosition(0, 0, 0);
+  //setViewerPosition(0, 0, 0);
   for(let i=0; i<150; ++i) {
     push();
     translate(randomx[i], randomy[i], randomz[i]);
     noStroke();
-    if(intersectsSphere(70, 0, 0)) {
-       stroke(0); 
-    }
+    //if(intersectsSphere(70, 0, 0)) {
+    //   stroke(0); 
+    //}
     let planet = random(planets);
     console.log(planet);
     texture(sun);
