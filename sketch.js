@@ -26,7 +26,7 @@ function setup() {
     randomx[i] = random(-5000, 5000);
     randomy[i] = random(-500, 500);
     randomz[i] = random(-500, 500);
-    console.log(planets);
+    console.log(planets[0], planets[1]);
   }
   
 }
@@ -40,8 +40,8 @@ function draw() {
     //if(intersectsSphere(70, 0, 0)) {
     //   stroke(0); 
     //}
-    console.log(planets[1], planets[2]);
-    texture = planets[1];
+    
+    texture(planets[1]);
     //rotateY(frameRate()/500);
     sphere(70);
     pop();
