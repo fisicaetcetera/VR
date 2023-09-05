@@ -1,14 +1,14 @@
 let randomx=[], randomy=[], randomz = [];
 let moon;
 let sun;
-let planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
+let planets[];
 
 function preload() {
   //createVRCanvas();
   moon = loadImage("moonmap1k.jpg");
-  sun = loadImage("sun.jpg");
+  planet[0] = loadImage("sun.jpg");
   earth = loadImage("earthcloud.jpg");
-  mercury = loadImage("mercury.jpg");
+  planet[1] = loadImage("mercury.jpg");
   venus = loadImage("venus.jpg");
   mars = loadImage("mars.jpg");
   jupiter = loadImage("jupiter.jpg");
@@ -40,9 +40,8 @@ function draw() {
     //if(intersectsSphere(70, 0, 0)) {
     //   stroke(0); 
     //}
-    planet = random(planets);
-    console.log(planet);
-    texture(planet);
+    console.log(planet[1]), planet[2];
+    texture = planet[1];
     //rotateY(frameRate()/500);
     sphere(70);
     pop();
