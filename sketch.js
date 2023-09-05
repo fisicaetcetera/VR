@@ -40,8 +40,8 @@ function draw() {
     //if(intersectsSphere(70, 0, 0)) {
     //   stroke(0); 
     //}
-    console.log(planet[1]), planet[2];
-    texture = planet[1];
+    console.log(planets[1]), planets[2];
+    texture = planets[1];
     //rotateY(frameRate()/500);
     sphere(70);
     pop();
