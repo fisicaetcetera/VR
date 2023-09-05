@@ -38,6 +38,7 @@ function draw() {
       
     }
     let planet = random(planets);
+    console.log(planet);
     texture(planet);
     //rotateY(frameRate()/500);
     noStroke();
