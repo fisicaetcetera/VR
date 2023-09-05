@@ -41,7 +41,8 @@ function draw() {
     translate(x[i], y[i], z[i]/50);
     noStroke();
     if(intersectsSphere(70, 0, 0)) {
-       textFont(myfont, 10 );
+       //textFont(myfont, 10 );
+      textFont('Georgia');
        text("Planet name...", x[i]+40, y[i]+40) ;
     }
     ii = random(numeros);
