@@ -2,21 +2,21 @@ let randomx=[], randomy=[], randomz = [];
 let moon;
 let sun;
 let planets = [];
-let numeros = [0, 1];
+let numeros = [0, 1,2,3,4,5,6,7,8,9];
 
 function preload() {
   //createVRCanvas();
   moon = loadImage("moonmap1k.jpg");
   planets[0] = loadImage("sun.jpg");
-  earth = loadImage("earthcloud.jpg");
+  planets[3] = loadImage("earthcloud.jpg");
   planets[1] = loadImage("mercury.jpg");
-  venus = loadImage("venus.jpg");
-  mars = loadImage("mars.jpg");
-  jupiter = loadImage("jupiter.jpg");
-  saturn = loadImage("saturn.jpg");
-  uranus = loadImage("uranus.jpg");
-  neptune = loadImage("neptune.jpg");
-  pluto = loadImage("pluto.jpg");
+  planets[2] = loadImage("venus.jpg");
+  planets[4] = loadImage("mars.jpg");
+  planets[5] = loadImage("jupiter.jpg");
+  planets[6] = loadImage("saturn.jpg");
+  planets[7] = loadImage("uranus.jpg");
+  planets[8] = loadImage("neptune.jpg");
+  planets[9] = loadImage("pluto.jpg");
 }
 
 function setup() {
