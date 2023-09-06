@@ -26,12 +26,13 @@ function setup() {
   //createCanvas(1366, 768 , WEBGL);
   background(0);
   frameRate(fr);
+      console.log("2054");
   for(let i=0; i<150; ++i) {
     x[i] = random(-500, 500);
     y[i] = random(-500, 500);
     z[i] = random(-500, 500);
     }
-    console.log("2054");
+
 }
 
 function draw() {
