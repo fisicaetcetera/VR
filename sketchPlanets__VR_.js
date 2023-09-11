@@ -196,11 +196,11 @@ function setup() {
   function draw(){
   
   setVRBackgroundColor(0,0,0);
-  setViewerPosition(posxe, posye, 400);
+  setViewerPosition(2*posxe, 2*posye, 400);
   //background(0);
   //rotateX(-PI/2);
   //console.log(escolha);
-  frameRate(frSlider.value());
+  //frameRate(frSlider.value());
   //fill(111);
   //textFont(myfont, 20 );
   //text('bonelli-2022',-width/2+20,-height/2+20,0);
