@@ -1,6 +1,4 @@
-//Previous version works with a cam with fixed rotation.
-//Recent previous version: to make the cam controlable by user.
-//This version: improved camera control
+//This version: VR
 //===========================
 //   Planetary formulas from Paul Schlyter's page at http://astro.if.ufrgs.br/trigesf/position.html.
 //this one: all planets: sketchPlanetsAll.js
@@ -442,7 +440,7 @@ else if(escolha == 'Marte'){
    //posx = posxe+raioTerra*2;
    //posy = posye + raioTerra*2;
    //posz = 0.;
-   camera(posx, posy,posz, 0, 0, 0,0,0,-1);
+   //camera(posx, posy,posz, 0, 0, 0,0,0,-1);
    //camera(distancia*sin(omega)*sin(tetaz), distancia*cos(omega)*sin(tetaz),distancia*cos(tetaz),posx,posy,posz,0,1,0);
 
     //sol
