@@ -176,8 +176,8 @@ function setup() {
   //ii = -30; // 1 mes atrás
   //ii = -365*11; //11 anos antes
   //ii = -105*365    ; //15/07/1916
-  ii = 1 //dias atras
-  ifim = ii + 27;  //define ifim
+  ii = 10; //dias atras
+  ifim = ii + 1400;  //define ifim
   anguloz = random(0, PI);
   angulox = random(0, PI);
   anguloy = random(0, PI);
@@ -497,7 +497,7 @@ else if(escolha == 'Marte'){
     rm = raioMarte;
     //rm = 10;
     sphere(rm);
-    rotateZ(frameCount/50);
+    rotateZ(frameCount/500);
 
     if (print) {
       //text('Marte', posxms + 15, posyms - 3);
@@ -513,7 +513,7 @@ else if(escolha == 'Marte'){
     sphere(raioJupiter);
     //sphere(raioTerra);
     rotateX(-PI/2);
-    rotateZ(frameCount/3);
+    rotateZ(frameCount/30);
     translate(5*raioJupiter,5*raioJupiter,0);
     fill('white');
     sphere(5);
