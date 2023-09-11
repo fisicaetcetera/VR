@@ -196,6 +196,7 @@ function setup() {
   function draw(){
   
   setVRBackgroundColor(0,0,0);
+  setViewerPosition(posxe, posye, 400);
   //background(0);
   //rotateX(-PI/2);
   //console.log(escolha);
