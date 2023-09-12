@@ -283,8 +283,8 @@ function setup() {
    console.log('ii , ifim' + ii, ifim);
 
     print = false;
-    d = d0 + ii;
-    diasMoon = diasMoon0 + ii;
+    d = d0 + ii/100;
+    diasMoon = diasMoon0 + ii/100;
     //calcula data
      diaEHoraf();//gera diaEHora e diaEHora1
   // Escreve a data
