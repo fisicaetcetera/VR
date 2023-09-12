@@ -131,6 +131,7 @@ function preload() {
 //
 //
 function setup() {
+  frameRate(1);
   //textura para assinatura  
   assinatura = createGraphics(380, 100);
   assinatura.background(255, 100);
@@ -176,7 +177,7 @@ function setup() {
   //ii = -30; // 1 mes atrás
   //ii = -365*11; //11 anos antes
   //ii = -105*365    ; //15/07/1916
-  ii = 10; //dias atras
+  ii = -10; //dias atras
   ifim = ii + 1400;  //define ifim
   anguloz = random(0, PI);
   angulox = random(0, PI);
@@ -196,7 +197,7 @@ function setup() {
   function draw(){
   
   setVRBackgroundColor(0,0,0);
-  setViewerPosition(0,0,500);
+  setViewerPosition(0,0,300);
   //background(0);
   //rotateX(-PI/2);
   //console.log(escolha);
